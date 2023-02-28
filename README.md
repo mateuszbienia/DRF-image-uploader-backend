@@ -14,4 +14,4 @@ Migrate operation creates database with admin user with credencials:
 - login: admin
 - password: password
 
-Migration will create also 3 account tiers Basic, Premium and Enterprise. App runs on http://127.0.0.1/:8000
+Migration will create also 3 account tiers Basic, Premium and Enterprise. App runs on http://127.0.0.1:8000
