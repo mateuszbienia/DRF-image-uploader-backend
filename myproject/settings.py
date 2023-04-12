@@ -124,7 +124,8 @@ DATABASES = {
 #         'PORT':"5432",
 #     }
 # }
-
+TEST_RUNNER = 'xmlrunner.extra.djangotestrunner.XMLTestRunner'
+TEST_OUTPUT_DIR = 'test-reports'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 

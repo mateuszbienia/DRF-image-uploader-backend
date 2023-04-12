@@ -18,6 +18,8 @@ from django.utils import timezone
 from rest_framework.authtoken.models import Token
 from django.test import override_settings
 import shutil
+import rest_framework.test
+import xmlrunner
 
 TEST_DIR = 'test_data_directory'
 
@@ -546,3 +548,7 @@ def tearDownModule():
         shutil.rmtree(TEST_DIR)
     except OSError:
         pass
+
+
+if __name__ == '__main__':
+    rest_framework.test.main(testRunner=xmlrunner.XMLTestRunner(output='test-reports'))
